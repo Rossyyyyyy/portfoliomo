@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 import './Contact.css'
 
 const Contact = () => {
@@ -10,9 +11,18 @@ const Contact = () => {
           I'm always open to discussing new opportunities and projects.
         </p>
         <div className="contact-links">
-          <a href="mailto:your.email@example.com" className="contact-btn">Email Me</a>
-          <a href="https://github.com/yourusername" className="contact-btn">GitHub</a>
-          <a href="https://linkedin.com/in/yourusername" className="contact-btn">LinkedIn</a>
+          <a href="mailto:roschelmaeanoos@gmail.com" className="contact-btn">
+            <FaEnvelope className="btn-icon" />
+            Email Me
+          </a>
+          <a href="https://github.com/Rossyyyyyy" target="_blank" rel="noopener noreferrer" className="contact-btn">
+            <FaGithub className="btn-icon" />
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/roschel-mae-ano-os-800324368/" target="_blank" rel="noopener noreferrer" className="contact-btn">
+            <FaLinkedin className="btn-icon" />
+            LinkedIn
+          </a>
         </div>
       </div>
     </section>

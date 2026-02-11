@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { FaCode, FaLaptopCode, FaPalette, FaRocket } from 'react-icons/fa'
 import './Hero.css'
 
 const Hero = () => {
@@ -47,9 +48,9 @@ const Hero = () => {
       
       <div className="container hero-content">
         <div className="hero-text">
-          <p className="greeting">Hello, I'm</p>
+          <p className="greeting"><FaRocket style={{ marginRight: '0.5rem' }} /> Hello, I'm</p>
           <h1 className="hero-title">
-            <span className="name">Roschel Mae E. Ano-os</span>
+            <span className="name">Roschel Mae</span>
           </h1>
           <div className="typing-container">
             <span className="typing-text">{text}</span>
@@ -67,7 +68,13 @@ const Hero = () => {
         <div className="hero-image">
           <div className="profile-circle">
             <div className="circle-content">
-              <span className="emoji">👩‍💻</span>
+              <div className="profile-emoji"><FaLaptopCode /></div>
+              <div className="floating-icons">
+                <FaCode className="float-icon icon-1" />
+                <FaRocket className="float-icon icon-2" />
+                <FaPalette className="float-icon icon-3" />
+                <FaLaptopCode className="float-icon icon-4" />
+              </div>
             </div>
           </div>
         </div>

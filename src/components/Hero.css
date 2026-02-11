@@ -4,9 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000;
-  color: white;
+  background: #0a0a0a;
+  color: #4ECDC4;
   overflow: hidden;
+  padding: 2rem 0;
+  border-bottom: 8px solid #2a2a2a;
+  image-rendering: pixelated;
 }
 
 .hero-background {
@@ -26,45 +29,51 @@
 
 .shape {
   position: absolute;
-  background: #fff;
+  background: #2a2a2a;
+  border: 4px solid #4ECDC4;
   border-radius: 0;
   animation: float 20s infinite ease-in-out;
+  box-shadow: 4px 4px 0px rgba(78, 205, 196, 0.2);
 }
 
 .shape-1 {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   top: 10%;
   left: 10%;
   animation-delay: 0s;
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .shape-2 {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   top: 60%;
   left: 80%;
   animation-delay: 2s;
-  opacity: 0.1;
+  opacity: 0.3;
+  background: #1a1a1a;
+  border-color: #4ECDC4;
 }
 
 .shape-3 {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   top: 80%;
   left: 20%;
   animation-delay: 4s;
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .shape-4 {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   top: 20%;
   right: 10%;
   animation-delay: 6s;
-  opacity: 0.1;
+  opacity: 0.3;
+  background: #1a1a1a;
+  border-color: #4ECDC4;
 }
 
 @keyframes float {
@@ -84,44 +93,51 @@
   gap: 4rem;
   align-items: center;
   padding: 2rem 0;
+  width: 100%;
 }
 
 .hero-text {
   animation: fadeInLeft 1s ease-out;
+  padding-right: 2rem;
 }
 
 .greeting {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  opacity: 0.9;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: #4ECDC4;
+  display: flex;
+  align-items: center;
 }
 
 .hero-title {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
 .name {
-  color: #fff;
-  font-weight: 900;
+  color: #4ECDC4;
+  text-shadow: 4px 4px 0px #2a2a2a;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .typing-container {
-  height: 60px;
-  margin-bottom: 1rem;
+  height: 70px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .typing-text {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4ECDC4;
 }
 
 .cursor {
-  font-size: 2rem;
+  font-size: 1.8rem;
   animation: blink 1s infinite;
 }
 
@@ -135,53 +151,57 @@
 }
 
 .hero-description {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-  line-height: 1.6;
+  font-size: 0.7rem;
+  margin-bottom: 2.5rem;
+  color: #4ECDC4;
+  line-height: 1.8;
+  max-width: 500px;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
 .btn {
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 0;
   text-decoration: none;
-  font-weight: 700;
-  transition: all 0.3s ease;
+  font-weight: 400;
+  transition: all 0.2s ease;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 0.7rem;
+  border: 4px solid #4ECDC4;
+  box-shadow: 6px 6px 0px #2a2a2a;
 }
 
 .btn-primary {
-  background: white;
-  color: #000;
-  border: 3px solid #fff;
-  border-radius: 0;
+  background: #2a2a2a;
+  color: #4ECDC4;
 }
 
 .btn-primary:hover {
-  background: #000;
-  color: #fff;
-  transform: scale(1.05);
+  background: #4ECDC4;
+  color: #0a0a0a;
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0px #2a2a2a;
 }
 
 .btn-secondary {
   background: transparent;
-  color: white;
-  border: 3px solid white;
-  border-radius: 0;
+  color: #4ECDC4;
+  border: 4px solid #2a2a2a;
+  box-shadow: 6px 6px 0px #2a2a2a;
 }
 
 .btn-secondary:hover {
-  background: white;
-  color: #000;
-  transform: scale(1.05);
+  background: #2a2a2a;
+  color: #4ECDC4;
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0px #4ECDC4;
 }
 
 .hero-image {
@@ -192,21 +212,17 @@
 }
 
 .profile-circle {
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   border-radius: 0;
-  background: #fff;
+  background: #2a2a2a;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid #fff;
+  border: 8px solid #4ECDC4;
   animation: pulse 3s infinite ease-in-out;
-  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-.circle-content {
-  font-size: 150px;
-  filter: grayscale(100%);
+  box-shadow: 12px 12px 0px rgba(78, 205, 196, 0.3);
+  position: relative;
 }
 
 @keyframes pulse {
@@ -218,9 +234,91 @@
   }
 }
 
+.circle-content {
+  background: #0a0a0a;
+  width: 360px;
+  height: 360px;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 4px solid #2a2a2a;
+}
+
+.profile-emoji {
+  font-size: 120px;
+  animation: bounce 2s infinite;
+  color: #4ECDC4;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.float-icon {
+  position: absolute;
+  font-size: 2rem;
+  animation: floatAround 4s infinite ease-in-out;
+  color: #4ECDC4;
+  opacity: 0.4;
+}
+
+.icon-1 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.icon-2 {
+  top: 10%;
+  right: 10%;
+  animation-delay: 1s;
+}
+
+.icon-3 {
+  bottom: 10%;
+  left: 10%;
+  animation-delay: 2s;
+}
+
+.icon-4 {
+  bottom: 10%;
+  right: 10%;
+  animation-delay: 3s;
+}
+
+@keyframes floatAround {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(10px, -10px) rotate(5deg);
+  }
+  50% {
+    transform: translate(-10px, 10px) rotate(-5deg);
+  }
+  75% {
+    transform: translate(10px, 10px) rotate(5deg);
+  }
+}
+
 .scroll-indicator {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -230,17 +328,17 @@
 .mouse {
   width: 30px;
   height: 50px;
-  border: 2px solid white;
-  border-radius: 15px;
+  border: 4px solid #4ECDC4;
+  border-radius: 0;
   margin: 0 auto 10px;
   position: relative;
 }
 
 .wheel {
-  width: 4px;
-  height: 10px;
-  background: white;
-  border-radius: 2px;
+  width: 6px;
+  height: 12px;
+  background: #4ECDC4;
+  border-radius: 0;
   position: absolute;
   top: 8px;
   left: 50%;
@@ -260,8 +358,8 @@
 }
 
 .scroll-indicator p {
-  font-size: 0.9rem;
-  opacity: 0.8;
+  font-size: 0.5rem;
+  color: #4ECDC4;
 }
 
 @keyframes fadeInLeft {
@@ -295,19 +393,65 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .hero-content {
+    gap: 3rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .typing-text {
+    font-size: 1.6rem;
+  }
+  
+  .profile-circle {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .circle-content {
+    width: 310px;
+    height: 310px;
+  }
+  
+  .profile-emoji {
+    font-size: 100px;
+  }
+}
+
 @media (max-width: 968px) {
+  .hero {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+  
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
     text-align: center;
+  }
+
+  .hero-text {
+    padding-right: 0;
   }
 
   .hero-title {
     font-size: 2.5rem;
   }
 
+  .typing-container {
+    height: 60px;
+    justify-content: center;
+  }
+
   .typing-text {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .hero-description {
+    max-width: 100%;
   }
 
   .hero-buttons {
@@ -315,22 +459,40 @@
   }
 
   .profile-circle {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
   }
 
   .circle-content {
-    font-size: 100px;
+    width: 260px;
+    height: 260px;
+  }
+  
+  .profile-emoji {
+    font-size: 80px;
+  }
+  
+  .scroll-indicator {
+    bottom: 20px;
   }
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding: 3rem 0;
+  }
+  
   .hero-title {
     font-size: 2rem;
   }
 
   .greeting {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+
+  .typing-container {
+    height: 50px;
   }
 
   .typing-text {
@@ -342,7 +504,25 @@
   }
 
   .btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 0.9rem 2rem;
+    font-size: 0.85rem;
+  }
+
+  .profile-circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .circle-content {
+    width: 210px;
+    height: 210px;
+  }
+  
+  .profile-emoji {
+    font-size: 60px;
+  }
+  
+  .floating-icons {
+    display: none;
   }
 }
