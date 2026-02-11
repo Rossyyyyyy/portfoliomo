@@ -1,0 +1,38 @@
+.contact {
+  background: #000;
+  color: #fff;
+}
+
+.contact-text {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  background: #000;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 0;
+  font-weight: 900;
+  transition: all 0.3s;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-btn:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+}

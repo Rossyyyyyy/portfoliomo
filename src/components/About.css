@@ -1,0 +1,18 @@
+.about {
+  background: #fff;
+  color: #000;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #000;
+  font-weight: 500;
+}
