@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaGraduationCap, FaLaptopCode, FaRocket, FaStar, FaChevronDown, FaChevronUp } from 'react-icons/fa'
+import { FaGraduationCap, FaLaptopCode, FaRocket, FaStar, FaChevronDown, FaChevronUp, FaCode } from 'react-icons/fa'
 import './Experience.css'
 
 const Experience = () => {
@@ -7,32 +7,46 @@ const Experience = () => {
 
   const timeline = [
     {
-      year: '2023',
-      title: 'Started Learning',
-      description: 'Began programming journey with Visual Basic .NET. Created file handling systems and a phone shop inventory with Access database.',
+      year: '2020',
+      title: 'Started Programming',
+      description: 'Began my programming journey learning C++ language. First steps into the world of coding and problem-solving.',
       icon: <FaGraduationCap />,
+      color: '#4ECDC4'
+    },
+    {
+      year: '2022',
+      title: 'Visual Basic .NET',
+      description: 'Started learning Visual Basic .NET. Created file handling systems and a phone shop inventory with Access database.',
+      icon: <FaLaptopCode />,
+      color: '#4ECDC4'
+    },
+    {
+      year: '2023',
+      title: 'Multiple Languages',
+      description: 'Expanded skills to PHP, Java, and Python. Built various projects and strengthened programming fundamentals.',
+      icon: <FaCode />,
       color: '#4ECDC4'
     },
     {
       year: '2024',
       title: 'Web Development',
-      description: 'Expanded to web technologies - PHP, JavaScript, HTML & CSS. Built school websites, inventory systems, and email phishing detection tool.',
+      description: 'Dove into web development with HTML & CSS. Built school websites, inventory systems, and email phishing detection tool.',
       icon: <FaLaptopCode />,
-      color: '#FFE66D'
+      color: '#4ECDC4'
     },
     {
       year: '2025',
-      title: 'Full-Stack & Mobile',
-      description: 'Learning Laravel, React, and React Native. Created SmartB barangay system, ProtectOcean app, and various e-commerce platforms.',
+      title: 'IoT & Hardware',
+      description: 'Exploring IoT with Arduino and Raspberry Pi. Building SingKarga charging station system combining software and hardware.',
       icon: <FaRocket />,
       color: '#4ECDC4'
     },
     {
       year: '2026',
       title: 'Current Learning',
-      description: 'Exploring IoT with Raspberry Pi. Building SingKarga charging station system and continuously learning new technologies as a student.',
+      description: 'Learning more languages for website and app development. Expanding database knowledge and exploring modern frameworks as a student.',
       icon: <FaStar />,
-      color: '#FFE66D'
+      color: '#4ECDC4'
     }
   ]
 
