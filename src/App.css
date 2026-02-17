@@ -26,9 +26,18 @@ section {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #4ECDC4;
-  text-shadow: 3px 3px 0px #2a2a2a;
-  image-rendering: pixelated;
+  color: var(--primary-color);
+  text-shadow: 3px 3px 0px var(--card-bg);
+  image-rendering: var(--pixel-rendering);
+  animation: fadeInUp 0.6s ease;
+}
+
+[data-theme="modern"] .section-title {
+  text-shadow: none;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 @media (max-width: 1200px) {

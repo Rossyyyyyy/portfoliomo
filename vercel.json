@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "api/leaderboard.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    },
+    "api/memory-leaderboard.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    },
+    "api/tetris-leaderboard.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
+}

@@ -59,6 +59,12 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             </a>
           </li>
           <li>
+            <a href="#achievements" onClick={handleLinkClick}>
+              <FaStar className="nav-icon" />
+              <span className="nav-text">Achievements</span>
+            </a>
+          </li>
+          <li>
             <a href="#contact" onClick={handleLinkClick}>
               <FaEnvelope className="nav-icon" />
               <span className="nav-text">Contact</span>
